@@ -1,6 +1,7 @@
 var http = require("http");
 var dt = require("./dateTimeModule");
 var url = require("url");
+var fs = require('fs')
 
 http
   .createServer(function (req, res) {
