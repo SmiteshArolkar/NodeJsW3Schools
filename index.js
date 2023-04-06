@@ -7,4 +7,8 @@ http.createServer(function (req,res){
         res.write(data)
         return res.end();
     })
+    fs.appendFile('newFile.txt',"Hello conteent!",(err) => {
+        if(err) throw err
+        console.log('Saved')
+    })
 }).listen(8080);
